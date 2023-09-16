@@ -13,6 +13,11 @@ public class RockPaperScissors
             return GameStatus.Player2Won;
         }
 
+        if (movePlayer1 == Moves.Paper)
+        {
+            return GameStatus.Player2Won;
+        }
+
         return GameStatus.Player1Won;
     }
 }
