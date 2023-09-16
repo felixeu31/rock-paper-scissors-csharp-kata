@@ -15,6 +15,10 @@ public class RockPaperScissors
 
         if (movePlayer1 == Moves.Paper)
         {
+            if (movePlayer2 == Moves.Rock)
+            {
+                return GameStatus.Player1Won;
+            }
             return GameStatus.Player2Won;
         }
 

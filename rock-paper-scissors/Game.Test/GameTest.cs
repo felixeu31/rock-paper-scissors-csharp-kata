@@ -48,16 +48,16 @@ namespace Game.Test
             gameStatus.Should().Be(GameStatus.Player2Won);
         }
 
-        //[Fact]
-        //public void paper_should_win_against_rock()
-        //{
-        //    // Arrange
-        //    // Act
-        //    var gameStatus = RockPaperScissors.Play(Moves.Paper, Moves.Rock);
+        [Fact]
+        public void paper_should_win_against_rock()
+        {
+            // Arrange
+            // Act
+            var gameStatus = RockPaperScissors.Play(Moves.Paper, Moves.Rock);
 
-        //    // Assert
-        //    gameStatus.Should().Be(GameStatus.Player1Won);
-        //}
+            // Assert
+            gameStatus.Should().Be(GameStatus.Player1Won);
+        }
 
         //[Fact]
         //public void rock_should_loose_against_paper()
