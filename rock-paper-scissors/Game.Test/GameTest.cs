@@ -37,6 +37,17 @@ namespace Game.Test
             gameStatus.Should().Be(GameStatus.Player1Won);
         }
 
+        [Fact]
+        public void paper_should_loose_against_scissors()
+        {
+            // Arrange
+            // Act
+            var gameStatus = RockPaperScissors.Play(Moves.Paper, Moves.Scissors);
+
+            // Assert
+            gameStatus.Should().Be(GameStatus.Player2Won);
+        }
+
         //[Fact]
         //public void paper_should_win_against_rock()
         //{
