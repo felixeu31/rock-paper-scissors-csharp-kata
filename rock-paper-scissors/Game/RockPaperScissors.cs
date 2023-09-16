@@ -13,7 +13,7 @@ public class RockPaperScissors
             return GameStatus.Player2Won;
         }
 
-        if (movePlayer1 == Moves.Paper)
+        else if (movePlayer1 == Moves.Paper)
         {
             if (movePlayer2 == Moves.Rock)
             {
@@ -22,6 +22,15 @@ public class RockPaperScissors
             return GameStatus.Player2Won;
         }
 
-        return GameStatus.Player1Won;
+        else
+        {
+            if (movePlayer2 == Moves.Paper)
+            {
+                return GameStatus.Player2Won;
+            }
+
+            return GameStatus.Player1Won;
+        }
+
     }
 }
